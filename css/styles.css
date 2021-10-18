@@ -13,7 +13,9 @@ body {
 
 .container {
   width: 1200px;
-  padding-left: 215px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 *,
@@ -29,6 +31,16 @@ ul {
 }
 
 h1 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 10px;
+  padding: 0;
+}
+
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -63,9 +75,10 @@ img {
   color: #000000;
 }
 
-header .logo {
-  padding: 24px 0 25px 200px;
+header {
+  border-bottom: 1px solid #ececec;
 }
+
 
 footer .logo span {
   color: var(--background-white);
@@ -77,12 +90,12 @@ footer .logo span {
   width: 1200px;
   padding: 0 15px;
   padding-bottom: 0;
-  border-bottom: 1px solid #ececec;
+  
 }
 
 .nav-menu {
-  width: 294px;
-  margin-left: 92px;
+  
+  margin-left: 93px;
 }
 
 .nav-menu ul {
@@ -91,6 +104,8 @@ footer .logo span {
 
 .nav-items li a {
   display: block;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .header-adress li a {
@@ -128,8 +143,8 @@ footer .logo span {
   margin-left: auto;
 }
 
-.adress li a {
-  margin-left: auto;
+.adress li  {
+  
   margin-right: 50px;
 }
 
@@ -155,10 +170,9 @@ footer .adress .adress-link {
 
 .hero-section {
   background-color: var(--background-black);
-  height: 600px;
-  width: 1600px;
-  position: relative;
-  display: block;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  
 }
 .container h1 {
   font-weight: 900;
@@ -169,8 +183,15 @@ footer .adress .adress-link {
   display: flex;
   letter-spacing: 0.06em;
   text-align: center;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
-  padding-top: 106px;
+}
+
+.order-button-div {
+  display: flex;	
+  justify-content: center;
 }
 
 .order-button {
@@ -183,12 +204,15 @@ footer .adress .adress-link {
   font-family: Roboto;
   width: 200px;
   height: 50px;
-
-  margin-left: 40%;
+  
+  
+  
   margin-top: 30px;
   letter-spacing: 0.06em;
   border-radius: 4px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .order-button:hover {
   background-color: #188ce8;
@@ -196,13 +220,15 @@ footer .adress .adress-link {
 
 .qualities-section ul {
   display: flex;
-  justify-content: space-between;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  
+ 
 }
 
 .qualities-item {
   width: 270px;
+}
+
+.qualities-item:not(:last-child) {  
   margin-right: 30px;
 }
 
